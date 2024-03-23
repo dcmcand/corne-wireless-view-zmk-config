@@ -59,17 +59,18 @@
                     	       &kp LGUI  &trans      &kp RET     &kp SPC   &trans    &kp RALT
                         >;
                 };
-        function_layer {
+                function_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  f1  |  f2  |  f3  |  f4  |  f5  |   |  f6     |  f7     |  f8      |  f9     |  f10  | BKSP  |
 // | LCTRL|      |      |      |      |      |   | BRI_DN  | VOL_DN  |  VOL_UP  |  BRI_DN |      | PSCRN |
 // | SHFT |      |      |      |      |      |   |         | HOME    | END      | MUTE    |      |       |
 //                      | GUI  |      | ENT  |   | SPC     |         | ALT      |
                         bindings = <
-   &kp TAB    &kp F1  &kp F2  &kp F3  &kp F4       &kp F5  &kp F6       &kp F7       &kp f8       &kp F9       &kp F10 &kp BSPC
-   &kp LCTRL  &trans  &trans  &trans  &trans       &trans  &kp C_BRI_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_UP &trans  &trans
-   &kp LSHFT  &trans  &trans  &trans  &trans       &trans  &kp HOME     &kp END      &kp C_MUTE   &trans       &trans  &trans
-                          	        &kp LGUI     &trans       &kp RET &kp SPACE    &trans       &kp RALT
+   &kp TAB    &kp F1  &kp F2  &kp F3    &kp F4       &kp F5  &kp F6       &kp F7       &kp f8       &kp F9       &kp F10 &kp BSPC
+//   &kp LCTRL  &trans  &trans  &trans    &trans       &trans  &kp C_BRI_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_UP &trans  &trans
+   &trans     &trans  &trans  &trans    &trans       &trans  &trans       &trans       &trans       &trans       &trans  &trans
+   &kp LSHFT  &trans  &trans  &trans    &trans       &trans  &kp HOME     &kp END      &kp C_MUTE   &trans       &trans  &trans
+                              &kp LGUI  &trans       &kp RET &kp SPACE    &trans       &kp RALT
                         >; 
                 };
         };
