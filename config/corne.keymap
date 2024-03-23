@@ -34,12 +34,12 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6   |  7  |  8  |  9  |  0  | BKSP |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6   |  7  |  8  |  9  |  0  | DEL |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT  | DWN |  UP | RGT |     |      |
 // | SHFT |     |     |     |     |     |   | HOME | END |     |     |     |      |
 //                    | GUI |     | ENT |   | SPC  |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5        &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5        &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans        &kp HOME &kp END &trans &trans    &trans &trans
                           	        &kp LGUI     &trans       &kp RET       &kp SPACE  &trans   &kp RALT
@@ -61,15 +61,15 @@
                 };
         function_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  f1  |  f2  |  f3  |  f4  |  f5  |   |  f6  |  f7  |  f8  |  f9  |  f0  | BKSP  |
-// | BTCLR| BT1  | BT2  | BT3  | BT4  | BT5  |   | LFT  | DWN  |  UP  |  RGT |      | PSCRN |
-// | SHFT |      |      |      |      |      |   |      |      |      |      |      |       |
-//                      | GUI  |      | ENT  |   | SPC  |      | ALT  |
+// |  TAB |  f1  |  f2  |  f3  |  f4  |  f5  |   |  f6     |  f7     |  f8      |  f9     |  f0  | BKSP  |
+// | LCTRL|      |      |      |      |      |   | BRI_DN  | VOL_DN  |  VOL_UP  |  BRI_DN |      | PSCRN |
+// | SHFT |      |      |      |      |      |   |         | HOME    | END      | MUTE    |      |       |
+//                      | GUI  |      | ENT  |   | SPC     |         | ALT      |
                         bindings = <
-   &kp TAB    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5     &kp F6       &kp F7       &kp f8       &kp F9       &kp F10 &kp BSPC
-   &bt LCTRL  &trans       &trans       &trans       &trans       &bt trans  &kp C_BRI_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_UP &trans  &kp PSCRN
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans     &kp HOME     &kp END      &kp C_MUTE   &trans       &trans  &trans
-                          	        &kp LGUI     &trans       &kp RET    &kp SPACE    &trans       &kp RALT
+   &kp TAB    &kp F1  &kp F2  &kp F3  &kp F4       &kp F5  &kp F6       &kp F7       &kp f8       &kp F9       &kp F10 &kp BSPC
+   &kp LCTRL  &trans  &trans  &trans  &trans       &trans  &kp C_BRI_DN &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_UP &trans  &kp PSCRN
+   &kp LSHFT  &trans  &trans  &trans  &trans       &trans  &kp HOME     &kp END      &kp C_MUTE   &trans       &trans  &trans
+                          	        &kp LGUI     &trans       &kp RET &kp SPACE    &trans       &kp RALT
                         >; 
                 };
         };
